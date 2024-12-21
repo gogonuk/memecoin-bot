@@ -1,0 +1,7 @@
+telegram:
+  api_id: "your_api_id"
+  api_hash: "your_api_hash"
+  groups:
+    - "example_group_1"
+    - "example_group_2"
+    
