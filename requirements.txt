@@ -1,0 +1,6 @@
+telethon
+requests
+pandas
+matplotlib
+PyYAML
+solana
