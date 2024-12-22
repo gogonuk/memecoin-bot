@@ -16,3 +16,4 @@ A Telegram bot for tracking memecoin calls and analyzing profitability.
 1. Start the Telegram bot:
    `bash
    python3 scripts/telegram_monitor.py
+chuchu
