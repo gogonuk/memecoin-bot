@@ -16,3 +16,4 @@ def fetch_token_price(token_address):
         except Exception as e:
             prices[name] = f"Error: {e}"
     return prices
+cucu
