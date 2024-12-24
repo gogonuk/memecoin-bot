@@ -1,0 +1,64 @@
+# Byte-compiled Python files
+pycache/
+*.py[cod]
+*.pyo
+
+# Virtual environment directories
+env/
+venv/
+memecoin_env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and error reports
+logs/
+*.log
+*.err
+
+# Configuration files and sensitive data
+config/secrets.env
+config/*.key
+config/*.pem
+
+# Data files
+data/logs/
+data/*.csv
+data/*.json
+data/*.db
+
+# API keys or sensitive credentials
+*.env
+
+# Build artifacts
+build/
+dist/
+*.egg-info
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Docker-related files (optional, if Docker is used)
+docker-compose.override.yml
+
+# Git-specific files
+*.lock
+*.bak
+*.swp
+
+# Temporary or backup files
+*.tmp
+*.bak
+*.swp
+
+# Test coverage results
+coverage/
+*.coverage
+
+# Dependencies installed in development
+pip-log.txt
+pip-delete-this-directory.txt
