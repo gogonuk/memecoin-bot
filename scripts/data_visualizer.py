@@ -1,12 +1,30 @@
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
+import os
 
-def plot_roi(file_path):
-    data = pd.read_csv(file_path)
-    plt.plot(data["timestamp"], data["roi"])
-    plt.xlabel("Time")
-    plt.ylabel("ROI (%)")
-    plt.title("ROI Over Time")
+def visualize_roi(data_file):
+    # Load data
+    df = pd.read_csv(data_file)
+    
+    # Ensure the data has the necessary columns
+    if 'date' not in df.columns or 'roi' not in df.columns:
+        raise ValueError("Data must contain 'date' and 'roi' columns")
+
+    # Plotting
+    plt.figure(figsize=(10, 5))
+    plt.plot(df['date'], df['roi'], marker='o')
+    plt.title('ROI Over Time')
+    plt.xlabel('Date')
+    plt.ylabel('ROI (%)')
+    plt.grid()
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+
+    # Save plot
+    plt.savefig('data/plots/roi_over_time.png')
     plt.show()
 
-plot_roi("data/roi_analysis.csv")
+# Example usage
+if __name__ == "__main__":
+    data_file = 'data/roi_data.csv'  # Path to your ROI data file
+    visualize_roi(data_file)
