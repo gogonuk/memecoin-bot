@@ -3,6 +3,8 @@ A Telegram bot for tracking memecoin calls and analyzing profitability.
 
 ## Features
 - Monitors Telegram groups for calls.
+- verify contracts for vulnerabilities.
+- Analyzes profitability of memecoin calls. (in development)
 - Fetches prices from multiple APIs.
 - Calculates ROI for trades.
 - Automates trading (optional).
@@ -16,4 +18,3 @@ A Telegram bot for tracking memecoin calls and analyzing profitability.
 1. Start the Telegram bot:
    `bash
    python3 scripts/telegram_monitor.py
-chuchu
